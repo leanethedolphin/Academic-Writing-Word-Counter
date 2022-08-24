@@ -1,0 +1,66 @@
+#copy and paste your text for each section
+
+#######
+
+intro = """
+
+
+
+
+
+"""
+
+#######
+
+methods = """
+
+
+
+
+"""
+
+#########
+
+results = """
+
+
+
+
+"""
+    
+#########
+    
+discussion = """
+
+
+
+
+"""
+
+######
+
+totalcount = intro+methods+results+discussion
+
+def word_counter(text):
+    count = 0
+    for word in text.split(" "):
+        count+=1
+    print(count)
+    
+########
+
+print("Intro count is")
+word_counter(intro)
+
+print("Methods count:")
+word_counter(methods)
+
+print("Results count:")
+word_counter(results)
+
+print("Disccusion count:")
+word_counter(discussion)
+
+print("Total count")
+word_counter(totalcount)
+
